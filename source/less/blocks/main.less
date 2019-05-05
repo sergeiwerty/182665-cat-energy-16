@@ -1,0 +1,184 @@
+.main {
+  background-color: @base-color;
+}
+
+.presentation-block {
+  background-image: url(../img/index-background-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  &__heading1 {
+    .text-regular;
+    color: @base-color;
+    line-height: 36px;
+    font-size: 36px;
+  }
+  &__paragraph {
+    .text-regular;
+    color: @base-color;
+    line-height: 14px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  &__button {
+    .action-btn-mobile;
+    .action-btn-mbl-text;
+    text-decoration: none;
+  }
+}
+
+.program-selection {
+  &__block {
+    background-color: @color-grey;
+    margin: 20px 20px 20px 22px;
+    padding-left: 20px;
+    padding-right: 25px;
+  }
+  &__logo {
+    display: inline-block;
+  }
+  &__subtitle {
+    .text-regular;
+    display: inline-block;
+    color: @black-color;
+    line-height: 37,02px;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  &__content {
+    font-family: @font-family-ar;
+  }
+  &__anchor {
+    .text-regular;
+    color: @black-color;
+    line-height: 16px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+.how-it-works {
+  width: 280px;
+  &__heading2 {
+    .text-regular;
+    color: @black-color;
+    line-height: 60px;
+    font-size: 36px;
+  }
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  &__text {
+    position: relative;
+    display: inline-block;
+    padding-left: 70px;
+    font-family: @font-family-ar;
+    color: #444444;
+    line-height: 18px;
+    font-size: 14px;
+  }
+}
+
+.text-1::before,
+.text-2::before,
+.text-3::before,
+.text-4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #68b738;
+}
+
+.text-1::before {
+    background-image: url(../img/advantage-leaf@1x.png);
+}
+
+.text-2::before {
+    background-image: url(../img/advantage-powder@1x.png);
+}
+
+.text-3::before {
+    background-image: url(../img/advantage-dining@1x.png);
+}
+
+.text-4::before {
+    background-image: url(../img/advantage-clock@1x.png);
+}
+
+.example-cat {
+  width: 320px;
+  background-color: @color-grey;
+  &__heading2 {
+    .text-regular;
+    font-size: 36px;
+    line-height: 60px;
+    color: @black-color;
+  }
+  &__text {
+    font-family: @font-family-ar;
+    color: #444444;
+    line-height: 18px;
+    font-size: 14px;
+  }
+  &__data {
+    .text-regular;
+    font-size: 24px;
+    line-height: 24px;
+    color: @black-color;
+    text-align: center;
+    border: 1px solid #cdcdcd;
+    border-bottom: none;
+    width: 124px;
+    height: 56px;
+  }
+  &__data-result {
+    font-family: @font-family-ar;
+    color: #444444;
+    line-height: 12px;
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+  &__data-heading {
+    .text-regular;
+    font-size: 14px;
+    line-height: 20px;
+    color: @black-color;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+  &__fragment {
+    .text-regular;
+    font-size: 16px;
+    line-height: 20px;
+    color: @black-color;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+}
+
+.contact-info {
+  width: 320px;
+  margin: 0 20px;
+  &__paragraph:first-child {
+    .text-regular;
+    font-size: 16px;
+    line-height: 20px;
+    color: @black-color;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    }
+  &__paragraph:nth-child(2) {
+    font-family: @font-family-ar;
+    font-size: 14px;
+    line-height: 20px;
+    color: #444444;
+    letter-spacing: 0;
+  }
+}
