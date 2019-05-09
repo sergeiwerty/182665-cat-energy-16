@@ -1,0 +1,26 @@
+.extra-gift {
+  display: flex;
+  width: 280px;
+  height: 289px;
+  background-image: url(../img/gift-photo-mobile@1x.jpg);
+}
+
+.extra-gift__paragraph {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 100px;
+  font-family: @font-family-ar;
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  color: @base-color;
+  &::before {
+    position: absolute;
+    top: 0;
+    content: "";
+    background-image: url("../img/icon-gift.svg");
+    width: 25px;
+    height: 25px;
+  }
+}
