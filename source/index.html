@@ -3,6 +3,7 @@
   <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header header--index">
@@ -11,12 +12,18 @@
       </a>
       <nav class="header__navigation">
         <ul class="header__list">
-          <li class="header__nav-item"><a href="index.html">Главная</a></li>
-          <li class="header__nav-item"><a href="catalog.html">Каталог продукции</a></li>
-          <li class="header__nav-item"><a href="form.html">Подбор программы</a></li>
+          <li class="header__nav-item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="form.html">Подбор программы</a>
+          </li>
         </ul>
       </nav>
-      <button class="header__button" type="button"></button>
+      <button class="header__button" type="button"><span class="visually-hidden">Кнопка открытия меню</span></button>
     </header>
     <main class="main">
       <section class="presentation-block">
@@ -25,9 +32,9 @@
           <p class="presentation-block__paragraph">Занялся собой? Займись котом!</p>
         </div>
         <div class="presentation-block__feed-img">
-          <img src="http://placehold.it/280x270" alt="Упаковка CAT ENERGY курица" class="presentation-block__img">
+          <img src="img/index-can-mobile@1x.png" alt="Упаковка CAT ENERGY курица" class="presentation-block__img">
         </div>
-        <a href="form.html" class="program-selection__button">Подобрать программу</a>
+        <a href="form.html" class="presentation-block__button">Подобрать программу</a>
       </section>
       <section class="program-selection">
         <h2 class="visually-hidden program-selection__heading2">Выбор программы для кота</h2>
@@ -54,35 +61,47 @@
         </div>
       </section>
       <section class="how-it-works">
-        <h2 class="visually-hidden how-it-works__heading2">Как работает наша система питания для котов</h2>
+        <h2 class="how-it-works__heading2">Как это работает</h2>
         <ul class="how-it-works__list">
           <li class="how-it-works__item">
-            <p class="how-it-works__text">Функциональное питание содержит только полезные питательные вещества.</p>
+            <p class="how-it-works__text how-it-works__text--1">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="how-it-works__item">
-            <p class="how-it-works__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+            <p class="how-it-works__text how-it-works__text--2">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
           <li class="how-it-works__item">
-            <p class="how-it-works__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+            <p class="how-it-works__text how-it-works__text--3">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="how-it-works__item">
-            <p class="how-it-works__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="how-it-works__text how-it-works__text--4">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ul>
       </section>
       <section class="example-cat">
         <h2 class="example-cat__heading2">Живой пример</h2>
-        <p class="example-cat__text"></p>
-        <table class="example-cat__table"></table>
+        <p class="example-cat__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <table class="example-cat__table">
+          <tr class="example-cat__row">
+            <td class="example-cat__data">5 кг</td>
+            <td class="example-cat__data">60 дней</td>
+          </tr>
+          <tr class="example-cat__row-result">
+            <td class="example-cat__data-result">снижение веса</td>
+            <td class="example-cat__data-result">затрачено времени</td>
+          </tr>
+          <tr class="example-cat__row-heading">
+            <td class="example-cat__data-heading" colspan="2">Затраты на питание: 15 000 руб.</td>
+          </tr>
+        </table>
         <div class="example-cat__presentation">
-          <img src="example-cat1.jpg" alt="кот до похудения" class="example-cat__image result-cat1">
-          <img src="example-cat2.jpg" alt="кот после похудения" class="example-cat__image result-cat2">
+          <img src="img/before-mobile@1x.png" alt="кот до похудения" class="example-cat__image result-cat1">
+          <img src="img/after-mobile@1x.png" alt="кот после похудения" class="example-cat__image result-cat2">
           <p class="example-cat__toggle">
             <span class="example-cat__fragment">Было</span>
-            <button type="button" class="example-cat__button--active">
-              <span class="visually-hidden">Было</span>
+            <button type="button" class="example-cat__button example-cat__button--active">
+              <span class="example-cat__fragment visually-hidden">Было</span>
             </button>
-            <button type="button" class="example-cat__button--inactive">
+            <button type="button" class="example-cat__button example-cat__button--inactive">
               <span class="visually-hidden">Стало</span>
             </button>
             <span class="example-cat__fragment">Стало</span>
@@ -91,37 +110,37 @@
       </section>
       <section class="contact-info">
         <p class="contact-info__paragraph">приглашаем к сотрудничеству дилеров!</p>
-        <p class="contact-info__paragraph">ул. Большая Конюшенна, д. 19/8 Санкт-Петербург</p>
+        <p class="contact-info__paragraph">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         <div class="contact-info__map">
-          <iframe src="" frameborder="0" class="contact-info__interactive">
+          <iframe src="" class="contact-info__interactive">
           </iframe>
-          <img src="http://placehold.it/320x360" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="360" class="contact-info__map-image">
+          <img src="img/bg-map-mobile@1x.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="360" class="contact-info__map-image">
         </div>
       </section>
     </main>
     <footer class="site-footer">
-      <a class="footer__anchor" href="index.html">
-        <img class="footer__logo" src="http://placehold.it/33x38" alt="логотип CAT ENERGY">
+      <a class="site-footer__anchor" href="index.html">
+        <img class="site-footer__logo" src="img/logo-footer.svg" alt="логотип CAT ENERGY" width="128">
       </a>
       <ul class="socials">
         <li class="socials__item">
-          <a href="#" class="socials__anchor">
+          <a href="#" class="socials__anchor socials__anchor--vk">
             <p class="visually-hidden">вконтакте</p>
           </a>
         </li>
         <li class="socials__item">
-          <a href="#" class="socials__anchor">
+          <a href="#" class="socials__anchor socials__anchor--inst">
             <p class="visually-hidden">инстаграм</p>
           </a>
         </li>
         <li class="socials__item">
-          <a href="#" class="socials__anchor">
+          <a href="#" class="socials__anchor socials__anchor--fb">
             <p class="visually-hidden">фейсбук</p>
           </a>
         </li>
       </ul>
       <a class="site-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-        <svg class="site-footer__logo-image"></svg>
+        <svg class="img/htmlacademy.svg"></svg>
       </a>
     </footer>
   </body>
