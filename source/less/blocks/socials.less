@@ -11,28 +11,23 @@
 .socials__anchor {
   position: relative;
   padding-left: 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .socials__anchor--vk::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url(img/icon-vk-mobile.svg);
+  background-image: url(../img/icon-vk-mobile.svg);
 }
 
 .socials__anchor--inst::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url(img/icon-insta-mobile.svg);
+  background-image: url(../img/icon-insta-mobile.svg);
 }
 
 .socials__anchor--fb::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url(img/icon-fb.svg);
+  background-image: url(../img/icon-fb.svg);
 }
