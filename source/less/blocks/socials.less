@@ -1,7 +1,11 @@
 .socials {
-  list-style: none;
+  .list-reset;
+  height: 65px;
+  display: flex;
   border-top: 2px solid #eaeaea;
   border-bottom: 2px solid #eaeaea;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .socials__anchor p {
@@ -10,9 +14,11 @@
 
 .socials__anchor {
   position: relative;
-  padding-left: 50px;
+  padding-left: 23px;
 
   &::before {
+    width: 22px;
+    height: 19px;
     content: "";
     position: absolute;
     top: 0;
@@ -22,12 +28,18 @@
 
 .socials__anchor--vk::before {
   background-image: url(../img/icon-vk-mobile.svg);
+  width: 22px;
+  height: 12px;
 }
 
 .socials__anchor--inst::before {
   background-image: url(../img/icon-insta-mobile.svg);
+  width: 16px;
+  height: 16px;
 }
 
 .socials__anchor--fb::before {
   background-image: url(../img/icon-fb.svg);
+  width: 14px;
+  height: 28px;
 }

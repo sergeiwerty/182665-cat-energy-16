@@ -8,20 +8,93 @@
   color: @base-color;
   line-height: 36px;
   font-size: 36px;
+  text-align: center;
 }
 
 .presentation-block__paragraph {
+  margin-bottom: 60px;
   .text-regular;
   color: @base-color;
   line-height: 14px;
   font-size: 14px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .presentation-block__button {
   .action-btn-mobile;
   .action-btn-mbl-text;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 40px;
   text-decoration: none;
+}
+
+.presentation-block__feed-img {
+  display: flex;
+  justify-content: center;
+}
+
+.presentation-block__img-tablet,
+.presentation-block__img-desktop {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .presentation-block {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 546px;
+    height: 961px;
+    background-image: none;
+  }
+
+    .presentation-block__decor {
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    align-items: flex-start;
+  }
+
+  .presentation-block__heading1 {
+    color: @dark-color;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: initial;
+  }
+
+  .presentation-block__paragraph {
+    color: @dark-color;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .presentation-block__feed-img {
+    position: absolute;
+    top: 275px;
+    left: 30px;
+    z-index: -1;
+    order: 1;
+  }
+
+  .presentation-block__button {
+    width: 245px;
+    height: 52px;
+    margin: 0;
+    margin-left: 120px;
+    font-size: 20px;
+    line-height: 52px;
+  }
+
+  .presentation-block__img,
+  .presentation-block__img-desktop {
+    display: none;
+  }
+
+  .presentation-block__img-tablet {
+    display: initial;
+  }
+
 }

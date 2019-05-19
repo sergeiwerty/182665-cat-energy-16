@@ -1,5 +1,7 @@
 .example-cat {
+  box-sizing: border-box;
   width: 320px;
+  padding: 0 20px;
   background-color: @color-grey;
 }
 
@@ -12,6 +14,8 @@
 
 .example-cat__text {
   font-family: @font-family-ar;
+  .paragraph-reset;
+  margin-bottom: 28px;
   color: #444444;
   line-height: 18px;
   font-size: 14px;
@@ -54,4 +58,22 @@
   color: @dark-color;
   text-transform: uppercase;
   letter-spacing: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .example-cat {
+    width: 100%;
+    padding: 0 30px;
+    background-color: #ffffff;
+  }
+
+  .example-cat__heading2 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example-cat__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

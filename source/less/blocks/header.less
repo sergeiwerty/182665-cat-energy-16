@@ -1,16 +1,74 @@
 .header {
   .text-regular;
-  border-bottom: 1px solid @border;
   background-color: @base-color;
-  background-image: url(../img/logo-mobile.svg);
-  background-repeat: no-repeat;
+}
+
+.header__anchor {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: 65px;
+  border-bottom: 1px solid @border;
+}
+
+.header__logo {
+  padding-left: 20px;
+  height: 38px;
+}
+
+.header__navigation {
+  min-height: 198px;
 }
 
 .header__list {
-  list-style: none;
+  .list-reset;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 65px;
+  border-bottom: 1px solid @border;
 }
 
 .header__nav-item a {
   text-decoration: none;
   color: inherit;
+  font-family: @font-family-r;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.header__button {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  header {
+    display: flex;
+  }
+
+  .header__navigation {
+    min-height: 75px;
+    flex-grow: 1;
+  }
+
+  .header__list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .header__anchor {
+    margin-right: 96px;
+  }
+
+  .header__anchor,
+  .header__nav-item {
+    border: 0;
+  }
 }
