@@ -88,7 +88,7 @@
     line-height: 52px;
   }
 
-  .presentation-block__img,
+  .presentation-block__img-mobile,
   .presentation-block__img-desktop {
     display: none;
   }
@@ -96,5 +96,40 @@
   .presentation-block__img-tablet {
     display: initial;
   }
+}
 
+@media (min-width: @desktop-width) {
+  .presentation-block {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .presentation-block__decor {
+    width: 50%;
+    flex-shrink: 0;
+  }
+
+  .presentation-block__feed-img {
+    position: relative;
+    top: -75px;
+    left: -70px;
+    width: 50%;
+    flex-shrink: 0;
+    background-image: url(../img/index-background-desktop@1x.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .presentation-block__img-mobile,
+  .presentation-block__img-tablet {
+    display: none;
+  }
+
+  .presentation-block__img-desktop {
+    display: initial;
+  }
+
+  .presentation-block__button {
+    margin-left: 0;
+    order: 2;
+  }
 }
